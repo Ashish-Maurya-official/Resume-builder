@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Maurya - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --bg-color: #ffffff;
+      --section-spacing: 24px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f4f6;
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg-color);
+      padding: 40px 50px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 24px;
+      margin-bottom: var(--section-spacing);
+    }
+
+    h1 {
+      color: var(--text-dark);
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    .contact-info span {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info span:not(:last-child)::after {
+      content: "|";
+      margin-left: 12px;
+      color: #d1d5db;
+    }
+
+    section {
+      margin-bottom: var(--section-spacing);
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      margin: 0 0 16px 0;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .summary-text {
+      font-size: 14px;
+      color: var(--text-dark);
+      text-align: justify;
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item {
+      margin-bottom: 16px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-dark);
+    }
+
+    .item-subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--text-dark);
+    }
+
+    .item-date {
+      font-size: 13px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .item-location {
+      font-size: 13px;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+      list-style-type: disc;
+    }
+
+    li {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 4px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .skill-tag {
+      background-color: #eff6ff;
+      color: var(--primary-color);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      border: 1px solid #dbeafe;
+    }
+
+    @media screen and (max-width: 600px) {
+      .resume-container {
+        padding: 24px;
+      }
+
+      .item-header {
+        flex-direction: column;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-info span:not(:last-child)::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="resume-container">
+    <header>
+      <h1>Ashish Maurya</h1>
+      <div class="contact-info">
+        <span>Chandauli 232110</span>
+        <span>+91 8887798423</span>
+        <span>Ashish53245@gmail.com</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary-text">
+        Software Developer with hands-on experience in React Native, Flutter, Next.js, and Java. Strong logical thinking
+        ability with experience building real-world web and mobile applications. Seeking opportunities to grow as a
+        full-stack and cross-platform developer while contributing to production-level systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">React Native</div>
+        <div class="skill-tag">Next.js</div>
+        <div class="skill-tag">Flutter</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">Spring Boot</div>
+        <div class="skill-tag">REST APIs</div>
+        <div class="skill-tag">C/C++</div>
+        <div class="skill-tag">HTML/CSS/JS</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">Git & GitHub</div>
+        <div class="skill-tag">CI/CD</div>
+        <div class="skill-tag">Docker</div>
+        <div class="skill-tag">AWS</div>
+        <div class="skill-tag">Android/iOS</div>
+        <div class="skill-tag">Linux</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Software Developer</span>
+          <span class="item-date">11/2025 – Current</span>
+        </div>
+        <div class="item-subtitle">YmGrad</div>
+        <ul>
+          <li>Developing and maintaining YmGrad website and mobile applications using React Native and Next.js.</li>
+          <li>Contributing to production apps available on Play Store and App Store.</li>
+          <li>Collaborating with team members in an agile environment.</li>
+          <li>Applying strong logical thinking and problem-solving skills to build production-level systems.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Software Engineer Intern</span>
+          <span class="item-date">07/2025 – 11/2025</span>
+        </div>
+        <div class="item-subtitle">YmGrad</div>
+        <ul>
+          <li>Worked on React Native and Next.js projects, contributed to the YmGrad website and mobile applications.
+          </li>
+          <li>Applied strong logical thinking and problem-solving skills, and collaborated with the development team on
+            production applications.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project-item">
+        <div class="item-title">Wadorwas</div>
+        <ul>
+          <li>Full-stack Next.js web application with Spring Boot backend and AWS EC2 deployment.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <div class="item-title">Recovator</div>
+        <ul>
+          <li>Windows desktop file recovery software built with Flutter and C++ integration.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <div class="item-title">Movie Search Application</div>
+        <ul>
+          <li>Flutter mobile app using movie API with optimized search UI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">Bachelor of Computer Applications</span>
+          <span class="item-date">Expected 08/2025</span>
+        </div>
+        <div class="item-subtitle">Computer Science</div>
+        <div class="item-location">Microtek College of Management & Technology, Varanasi, India</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">Logical Thinking</div>
+        <div class="skill-tag">Team Collaboration</div>
+        <div class="skill-tag">Problem Solving</div>
+        <div class="skill-tag">Communication</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
